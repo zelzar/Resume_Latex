@@ -4,7 +4,7 @@
 % Last Updated: 18 May 2025
 %--------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -54,10 +54,11 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+% --- FIXED RIGHT-SIDE DATE FONT ---
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+      \small#1 & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -84,69 +85,73 @@
       \resumeItemListStart
         \resumeItem{Honors: Moeur Award, Dean’s List (8x), NAmU Recipient, AP Scholar Award}
         \resumeItem{Relevant Coursework: Data Structures and Algorithms, Theory of Computation, OOP, Data Science}
+        \resumeItem{Club Officer, Software Developers Association (SoDA): Organized workshops, peer-led projects, and networking events for 300+ student developers}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Software Developer }{Tempe, AZ}
+      {Honeywell International | Capstone Project}{Jan 2024--Dec 2024}
+      \resumeItemListStart
+        \resumeItem{Developed a blockchain-based UAM Management platform using \textbf{Hyperledger Fabric} and \textbf{React} to ensure secure, real-time tracking of Urban Air Mobility parts and systems.}
+        \resumeItem{Designed intuitive UI/UX interfaces while improving transparency and traceability across distributed networks.}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Undergraduate Teaching Assistant (CSE100, CSE120)}{Tempe, AZ}
+      {ASU Ira A. Fulton Schools of Engineering}{Jan 2023--Dec 2023}
+      \resumeItemListStart
+        \resumeItem{Assisted 150+ students across CSE100 (Programming in C++) and CSE120 (Digital Design), holding office hours, grading assignments, and helping students with debugging and digital logic simulation.}
+        \resumeItem{Supervised labs simulating ALUs and CPUs in VHDL, and mentored students through foundational computing concepts.}
+      \resumeItemListEnd
+       
+    \resumeSubheading
+      {Prototyping Lead }{Tempe, AZ}
+      {Visionary Hands - ASL Smart Gloves Project, EPICS Program, ASU}{Aug 2024--Dec 2024}
+      \resumeItemListStart
+        \resumeItem{Built smart gloves that translate American Sign Language (ASL) into speech using LLMs to improve translation accuracy.}
+        \resumeItem{Collaborated with nonprofits; won EPICS Elite Pitch Competition for amount \$1000.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {IT Assistant Intern}{Lucknow, India}
+      {Softpro India}{Mar 2020--Dec 2020}
+      \resumeItemListStart
+        \resumeItem{Contributed to software development projects in C++, C, and Python; supported documentation and testing.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 \section{Projects}
   \resumeSubHeadingListStart
+    
     \resumeProjectHeading
-      {\textbf{Blockchain for UAM Data Management} $\vert$ Honeywell International}{Jan 2024 -- Dec 2024}
+      {\textbf{Visualizing Real Madrid's Legacy}$\vert$ Full Stack Project}{Jan 2025--May 2025}
       \resumeItemListStart
-        \resumeItem{Created a blockchain-powered platform to ensure real-time parts tracking and secure data handling for Urban Air Mobility (UAM) systems; GitHub Repository: https://github.com/Honeywell-UAM-Data-Management/research}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{Visionary Hands} $\vert$ EPICS ASU}{Aug 2024 -- Dec 2024}
-      \resumeItemListStart
-        \resumeItem{Developing smart gloves that translate ASL into speech using LLMs to enhance recognition accuracy.}
-        \resumeItem{Collaborating with community partners; won EPICS Elite Pitch Competition \$1000.}
-      \resumeItemListEnd
+        \resumeItem{Developed a React + D3.js scrollytelling app to showcase Real Madrid’s history through interactive visuals.}
+        \resumeItem{Engineered dynamic graphs for player stats, match outcomes, and club milestones using custom data pipelines.}
+        \resumeItem{https://www.linkedin.com/in/shreyazh/details/projects/}
+        \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{Visualizing Real Madrids Legacy}$\vert$ Full Stack Project}{ Jan 2023 -- May 2023}
-      \resumeItemListStart
-        \resumeItem{Created an interactive React and D3.js scrollytelling web app visualizing Real Madrid’s history, player networks, and Champions League data using diverse datasets and custom dynamic visualizations.}
-      \resumeItemListEnd
+      {\textbf{Spotify Song Recommender System} $\vert$ Independent ML Project}{Feb 2024--Mar 2024}
+        \resumeItemListStart
+          \resumeItem{Analyzed 26K+ songs using \textbf{R} and \textbf{Python} to uncover trends in song popularity and audio feature correlations.}
+          \resumeItem{Engineered a \textbf{content-based recommendation engine} leveraging \textbf{cosine similarity} and \textbf{Euclidean distance} on audio features, applying ML techniques for accurate, genre-agnostic music discovery.}
+          \resumeItem{Github: https://github.com/zelzar/Personal-Projects/tree/potli/SongRecommender}
+        \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{Disaster Relief App} $\vert$ Apple | DHS}{Jan 2022 -- May 2022}
+      {\textbf{Calaminect App} $\vert$ Apple Inc. \& U.S. Department of Homeland Security}{Jan 2022--May 2022}
       \resumeItemListStart
-        \resumeItem{Led development of a real-time disaster response networking app using Xcode and cloud databases.}
-        \resumeItem{Awarded \$1000; GitHub Repository: https://github.com/zelzar/ProjectX}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-%-----------EXPERIENCE-----------
-\section{Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Undergraduate Teaching Assistant (CSE100)}{Tempe, AZ}
-      {ASU Ira A. Fulton Schools of Engineering}{Aug 2023 -- Dec 2023}
-      \resumeItemListStart
-        \resumeItem{Facilitated  office hours, assisted 100+ students in mastering C++ foundations, and supported course delivery.}
+        \resumeItem{Led the development of an iOS app(\textbf{Swift}/\textbf{Xcode}) providing  community-based resource sharing during natural disasters.}
+        \resumeItem{Led UI/UX design, integrated cloud-based backend, and implemented real-time networking for user coordination.}
+        \resumeItem{Sponsored by Apple and DHS; awarded \textbf{\$1000} for innovation and impact. GitHub: https://github.com/zelzar/ProjectX}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {Undergraduate Teaching Assistant (CSE120)}{Tempe, AZ}
-      {ASU Ira A. Fulton Schools of Engineering}{Jan 2023 -- Dec 2023}
-      \resumeItemListStart
-        \resumeItem{Guided 50+ students in digital circuit design using VHDL; supervised labs simulating ALUs and CPUs.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Club Officer, Software Developers Association (SoDA)}{Tempe, AZ}
-      {Arizona State University}{Jan 2022 -- Dec 2022}
-      \resumeItemListStart
-        \resumeItem{Organized technical workshops, peer-led projects, and networking events to support 200+ student developers.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {IT Assistant Intern}{Lucknow, India}
-      {Softpro India}{Mar 2020 -- Dec 2020}
-      \resumeItemListStart
-        \resumeItem{Contributed to software development projects in C++, C, and Python; supported documentation and testing.}
-      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 %-----------SKILLS-----------
@@ -155,8 +160,8 @@
   \small{\item{
     – \textbf{Languages:} Java, C++, Python, SQL, HTML, CSS, JavaScript, React JS, Firebase \\
     – \textbf{DevOps:} Git, GitHub, Docker, CI/CD \\
-    – \textbf{Cloud Platforms:} Microsoft Azure, Google Cloud \\
-    – \textbf{Operating Systems:} Linux, Unix \\
+    – \textbf{Cloud Platforms:} AWS, Docker, Git, PostgreSQL, MongoDB \\
+    – \textbf{Systems:} REST APIs, distributed systems, basic CI/CD \\
     – \textbf{Analytics/ML:} MS Fabric, TensorFlow, Scikit-learn, PyTorch, Hugging Face, LLaMA \\
     – \textbf{Blockchain:} Ethereum, Hyperledger
   }}
