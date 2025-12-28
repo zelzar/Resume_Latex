@@ -1,9 +1,6 @@
-%--------------------------
-% Resume -- Latex
+% Resume LaTeX
 % Author : Shreyash Singh
-% Last Updated: 18 May 2025
-%--------------------------
-
+% Last Updated: 09 Nov 2025
 \documentclass[letterpaper,10pt]{article}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -31,7 +28,6 @@
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
@@ -54,7 +50,6 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-% --- FIXED RIGHT-SIDE DATE FONT ---
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -71,111 +66,156 @@
 
 %----------HEADING----------
 \begin{center}
-    {\Huge \scshape Shreyash Singh} \\ \vspace{1pt}
-    \small \href{www.shreyashsingh.com}{www.shreyashsingh.com} $\vert$ \href{mailto:shreyashsingh26@gmail.com}{shreyashsingh26@gmail.com} $\vert$ +1 (623) 297-7664 $\vert$ 
-    \href{https://linkedin.com/in/shreyazh}{linkedin.com/in/shreyazh} 
+    {\Huge \scshape Shreyash Singh} \\ \vspace{2pt}
+    \small (623) 297 7664 $\vert$ \href{mailto:shreyashsingh26@gmail.com}{shreyashsingh26@gmail.com} $\vert$ \href{http://www.shreyashsingh.com}{www.shreyashsingh.com} $\vert$ \href{https://linkedin.com/in/shreyazh}{linkedin.com/in/shreyazh}
 \end{center}
+
+\vspace{-4pt}
+
+\section{Summary}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \item \small{Senior full stack software engineer with strong foundation in building scalable distributed systems, cloud native platforms, and production machine learning pipelines. Experienced leading small to medium engineering teams, driving architecture design, and shipping end to end product features from prototype to production. Strong emphasis on reliability observability security and developer experience.}
+  \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Engineer}{Dallas, TX}
+      {FitKind}{Sep 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Leading technical implementation and architecture for a fitness and wellness platform connecting trainers and users. Responsible for core backend services frontend modules and deployment pipelines.}
+        \resumeItem{Architected a modular micro frontend friendly frontend using React and TypeScript with component encapsulation to enable parallel development by multiple teams.}
+        \resumeItem{Implemented secure user management and authentication flows integrating OAuth providers and JWT based session handling.}
+        \resumeItem{Built realtime communication primitives using WebSockets and GraphQL subscriptions to enable instant messaging live session signaling and presence tracking.}
+        \resumeItem{Designed and implemented REST and GraphQL APIs using Node.js Prisma ORM and PostgreSQL for relational data and for flexible user content.}
+        \resumeItem{Implemented containerized deployments on Azure using Docker and created pipelines automated testing and deployment.}
+        \resumeItem{Collaborated with product and design to run usability experiments and A B tests to reduce onboarding friction and improve conversion metrics.}
+      \resumeItemListEnd
+   
+      \resumeSubheading
+      {Developer}{Remote}
+      {Career Compass AI}{Sep 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Contributing to a market analytics and AI driven career assistance platform focused on personalized guidance for students and early career professionals.}
+        \resumeItem{Implemented retrieval augmented generation pipelines using LangChain and custom connectors for market data ingestion.}
+        \resumeItem{Built vector database workflows for embeddings generation and semantic search including chunking strategies embedding tuning and incremental indexing.}
+        \resumeItem{Designed real time caching and scoring layer to serve low latency RAG answers while maintaining consistency with source data and eviction policies.}
+        \resumeItem{Developed fine grained access control and telemetry to measure model drift and prompt effectiveness and established retraining triggers.}
+        \resumeItem{Worked on integration with external job APIs and resume parsers to normalize job openings and candidate profiles into canonical schemas.}
+        \resumeItem{Coordinated with product and data science to perform market analysis and prioritize features for early adopter cohorts.}
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Software Developer Capstone}{Tempe, AZ}
+      {Honeywell International | ASU Capstone}{Jan 2024 -- Dec 2024}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented a blockchain based UAM parts management prototype using Hyperledger Fabric to improve traceability of parts across supply chain partners.}
+        \resumeItem{Implemented chaincode components and integrated peer nodes exposing part verification APIs.}
+        \resumeItem{Built frontend management console using React and TypeScript to allow technicians to query part history and generate compliance reports.}
+        \resumeItem{Automated deployment and test orchestration with Docker Compose and created scripts to validate network resilience and transaction flows.}
+        \resumeItem{Documented end to end architecture and collaborated with stakeholders to define governance requirements for data privacy and audit trails.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Undergraduate Teaching Assistant CSE100 CSE120}{Tempe, AZ}
+      {ASU Ira A Fulton Schools of Engineering}{Jan 2023 -- Dec 2023}
+      \resumeItemListStart
+        \resumeItem{Provided student mentoring and technical support for 150 plus students across programming and digital design courses including debugging lab assignments and VHDL simulation guidance.}
+        \resumeItem{Created supplemental materials and automated grading helpers to improve grading throughput and consistency.}
+        \resumeItem{Led lab sessions on ALU CPU design and hardware simulation and advised student capstone projects.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {IT Assistant Intern}{Lucknow India}
+      {Softpro India}{Mar 2020 -- Dec 2020}
+      \resumeItemListStart
+        \resumeItem{Contributed to software modules in C C++ and Python assisted with test automation and documentation and supported deployment and maintenance tasks.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Selected Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Visualizing Real Madrid Legacy} $\vert$ Full stack $\vert$ Jan 2025 -- May 2025}{}
+        \resumeItemListStart
+          \resumeItem{Developed a React and D3 based interactive visualization site to explore club history player stats and season level trends.}
+          \resumeItem{Built data pipelines in Python to aggregate clean and version historical datasets from multiple sources and implemented progressive loading for performance.}
+          \resumeItem{Designed responsive UI patterns and implemented Intersection Observer based narrative transitions to guide exploration.}
+          \resumeItem{Tools Technologies: React, TypeScript, D3, Python Pandas, Framer Motion.}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Spotify Song Recommender System} $\vert$ ML project $\vert$ Feb 2024 -- Mar 2024}{}
+        \resumeItemListStart
+          \resumeItem{Engineered a content based recommendation pipeline using cosine similarity and Euclidean distance on normalized audio feature vectors to deliver personalized song suggestions.}
+          \resumeItem{Performed exploratory data analysis on 26k plus tracks implemented feature transformations dimensionality reduction and optimized similarity search for production latency.}
+          \resumeItem{Built a Flask API and lightweight React frontend to serve recommendations and implemented feedback loop for iterative tuning.}
+          \resumeItem{Tools Technologies: Python, R, scikit-learn, Pandas, Flask, React, PostgreSQL, Git.}
+        \resumeItemListEnd
+
+   \resumeProjectHeading
+  {\textbf{Calaminect App} $\vert$ Disaster Relief Communication System $\vert$ DHS and Apple $\vert$ Jan 2024 -- May 2024}{}
+    \resumeItemListStart
+      \resumeItem{Developed a real time disaster response communication platform enabling coordination in low connectivity crisis zones.}
+      \resumeItem{Built the iOS interface in Swift with secure device pairing, encoded distress signaling, and asynchronous broadcast messaging support.}
+      \resumeItem{Presented to stakeholders at Apple and the US Department of Homeland Security; awarded a \$1000 grant for innovation and technical viability.}
+    \resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{Secure Digital Voting Prototype} $\vert$ Blockchain Elections System $\vert$ Aug 2023 -- Dec 2023}{}
+    \resumeItemListStart
+      \resumeItem{Developed a tamper resistant blockchain based voting system supporting voter anonymity and end-to end auditability.}
+      \resumeItem{Engineered the full hardware prototype using Arduino microcontrollers, RF modules, environmental sensors, and regulated power circuit design to support mesh-based local communication networks.}
+      \resumeItem{Implemented smart contracts to manage ballot creation, vote casting, verification, and immutable storage on Ethereum.}
+      \resumeItem{Built a React based results dashboard enabling real time tally visibility, verification audits, and secure transaction traceability.}
+    \resumeItemListEnd
+
+
+
+  \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Bachelor of Science in Computer Science (GPA: 4.0/4.0)}{Tempe, AZ}
-      {Arizona State University }{May 2025}
+      {Bachelor of Science in Computer Science GPA 4.0/4.0}{Tempe AZ}
+      {Arizona State University}{May 2025}
       \resumeItemListStart
-        \resumeItem{Honors: Summa cum laude, Moeur Award, Dean’s List (8x), NAmU Recipient, AP Scholar Award}
-        \resumeItem{Relevant Coursework: Data Structures and Algorithms, Theory of Computation, OOP, Data Science}
-        \resumeItem{Club Officer, Software Developers Association (SoDA): Organized workshops, projects, and events for 300+ developers}
-        \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-%-----------EXPERIENCE-----------
-
-
-\section{Professional Experience}
-  \resumeSubHeadingListStart
-
-  \resumeSubheading
-      {Chief Technical Officer $\vert$ CoFounder}{Dallas, TX}
-      {OnixAI}{Aug 2025-- Present}
-      \resumeItemListStart
-        \resumeItem{Overseeing system architecture and core engineering for RURL, a scalable cab-sharing and food delivery platform built with microservices and real-time location services.}
-        \resumeItem{Leading architecture of secure REST APIs, deployment pipeline, and React Native mobile + Next.js web platform with authentication, payments, and live tracking.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Software Developer }{Tempe, AZ}
-      {Honeywell International | Capstone Project}{Jan 2024--Dec 2024}
-      \resumeItemListStart
-        \resumeItem{Developed a blockchain-based UAM Management platform using \textbf{Hyperledger Fabric} and \textbf{React} to ensure secure, real-time tracking of Urban Air Mobility parts and systems.}
-        \resumeItem{Designed intuitive UI/UX interfaces while improving transparency and traceability across distributed networks.}
-      \resumeItemListEnd
-    
-    \resumeSubheading
-      {Undergraduate Teaching Assistant (CSE100, CSE120)}{Tempe, AZ}
-      {ASU Ira A. Fulton Schools of Engineering}{Jan 2023--Dec 2023}
-      \resumeItemListStart
-        \resumeItem{Assisted 150+ students across CSE100 (Programming in C++) and CSE120 (Digital Design), holding office hours, grading assignments, and helping students with debugging, digital logic simulation, verilog and hardware abstraction concepts.
-}
-        \resumeItem{Supervised labs simulating ALUs and CPUs in VHDL, and mentored students through foundational computing concepts.}
-      \resumeItemListEnd
-       
-    \resumeSubheading
-      {IT Assistant Intern}{Lucknow, India}
-      {Softpro India}{Mar 2020--Dec 2020}
-      \resumeItemListStart
-        \resumeItem{Contributed to software development projects in C++, C, and Python; supported documentation and testing.}
+        \resumeItem{Honors: Summa cum laude, Moeur Award, Dean's List 8 times, NAmU Recipient, AP Scholar Award}
+        \resumeItem{Relevant Coursework: Data Structures and Algorithms, Theory of Computation, Object Oriented Programming, Distributed Systems, Cloud Computing, Database Management, Software Engineering, Operating Systems, Computer Networks}
+        \resumeItem{Club Officer: Software Developers Association (SoDA), Organized workshops, hackathons, and partnerships to grow membership and industry engagement}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------
-\section{Projects}
-  \resumeSubHeadingListStart
-    
-    \resumeProjectHeading
-      {\textbf{Visualizing Real Madrid's Legacy} $\vert$ Full Stack Project $\vert$ \href{https://www.linkedin.com/in/shreyazh/details/projects/}{Link}}{Jan 2025--May 2025}
-        \resumeItemListStart
-          \resumeItem{Developed a React + D3.js scrollytelling app to showcase Real Madrid’s history through interactive visuals.}
-          \resumeItem{Engineered dynamic graphs for player stats, match outcomes, and club milestones using custom data pipelines.}
-          \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{Spotify Song Recommender System} $\vert$ Independent ML Project $\vert$ \href{https://github.com/zelzar/Personal-Projects/tree/potli/SongRecommender}{Github}}{Feb 2024--Mar 2024}
-        \resumeItemListStart
-          \resumeItem{Analyzed 26K+ songs using \textbf{R} and \textbf{Python} to uncover trends in song popularity and audio feature correlations.}
-          \resumeItem{Engineered a \textbf{content-based recommendation engine} leveraging \textbf{cosine similarity} and \textbf{Euclidean distance} on audio features, applying ML techniques for accurate, genre-agnostic music discovery.}
-         \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{Calaminect App} $\vert$ Apple Inc. \& U.S. Department of Homeland Security $\vert$ \href{https://github.com/zelzar/ProjectX}{GitHub}}{Jan 2022--May 2022}
-      \resumeItemListStart
-        \resumeItem{Led development of an iOS app enabling peer-to-peer disaster relief coordination with Swift, backend integration, and real-time networking. Awarded \textbf{\$1000} for innovation and impact.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-
+% (Duplicate early Technical Skills and Awards removed — keeping the later, well-formed sections)
 %-----------SKILLS-----------
 \section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-  \small{\item{
-    – \textbf{Languages:} C++, C, Python, Java, SQL, HTML, CSS, JavaScript, React JS, Firebase \\
-    – \textbf{DevOps/Cloud:} Git, GitHub, Docker, CI/CD, AWS, PostgreSQL, MongoDB \\
-    – \textbf{Systems:} VHDL Simulation, REST APIs, distributed systems, basic CI/CD, System-level Debugging \\
-    – \textbf{Analytics/ML:} TensorFlow, Scikit-learn, PyTorch, Hugging Face, LLaMA \\
-  }}
+\begin{itemize}[leftmargin=0.25in,label=\textbullet]
+  \small{
+    \item \textbf{Languages} C++, C, Python, Java, SQL, JavaScript, TypeScript, Swift, R
+    \item \textbf{Web} React, Node.js, Express, Flask, GraphQL, REST APIs, HTML, CSS
+    \item \textbf{Databases} PostgreSQL, MongoDB, Redis, Vector DB, FAISS, Pinecone
+    \item \textbf{ML and AI} TensorFlow, PyTorch, scikit-learn, Hugging Face, LangChain, Embeddings, RAG
+    \item \textbf{DevOps / Cloud} Docker, GitHub Actions, Azure, AWS
+    \item \textbf{Systems} VHDL, Verilog, Hyperledger Fabric
+  }
 \end{itemize}
 
 %-----------AWARDS-----------
 \section{Awards and Achievements}
-\begin{itemize}[leftmargin=0.15in, label={}]
-  \small{\item{
-    – \textbf{AP Scholar Award} for excellence in Computer Science, Physics, and Math \\
-    – \textbf{Gold Medal} as Camp Counselor/ Peer Mentor for incoming Engineering students (2024) \\
-    – \textbf{1st Prize} Meshmerize Robot (Zonal), \textbf{6th} International at IIT Bombay (Autonomous robotics contest) \\
-    – \textbf{3rd Prize} in Olympus (Robot Race, CMS LKO) 2017, \textbf{3rd Prize} in Guerra de Robot, Micfest 2018\\
-    – \textbf{Overall Runner-up} in Quanta (Robotics) 2018, CMS Lucknow \\
-    – \textbf{Chess Champion} in High School(2020, CMS GN 1), \textbf{1st} in UP32 Knights Chess Competition(Lucknow)\\
-  }}
+\begin{itemize}[leftmargin=0.25in,label=\textbullet]
+  \small{
+    \item \textbf{AP Scholar Award} for excellence in Computer Science, Physics, and Math
+    \item \textbf{Gold Medal} as Camp Counselor / Peer Mentor for incoming Engineering students (2024)
+    \item \textbf{1st Prize} Meshmerize Robot (Zonal); \textbf{6th} International at IIT Bombay (Autonomous robotics contest)
+    \item \textbf{3rd Prize} in Olympus (Robot Race, CMS LKO) 2017; \textbf{3rd Prize} in Guerra de Robot, Micfest 2018
+    \item \textbf{Overall Runner-up} in Quanta (Robotics) 2018, CMS Lucknow
+    \item \textbf{Chess Champion} in High School (2020, CMS GN 1); \textbf{1st} in UP32 Knights Chess Competition (Lucknow)
+  }
 \end{itemize}
-
 \end{document}
